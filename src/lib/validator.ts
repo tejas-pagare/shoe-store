@@ -17,3 +17,10 @@ export const inserProductSchema = z.object({
   sizes: z.array(z.string()).min(1, "Product must be at least 1 size"),
   price: currency,
 });
+
+const signFormSchema = z.object({
+  email:z.string().email("Enter a valid email"),
+  password:z.string().min(6,"Password must be atleast 6 character long")
+})
+
+export {signFormSchema}

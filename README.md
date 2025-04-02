@@ -53,7 +53,39 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 => npm run lint
 => add this in script in package.json => {postinstall:"prisma generate"}
 
+## Authentications using next-auth
+=>Environment Variables
+{
+NEXTAUTH_URL
+NEXTAUTH_SECRET
+NEXTAUTH_URL_INTERNAL
+}
+Options
+providers
+secret
+session
+jwt
+pages
+callbacks
+events
+adapter
+debug
+logger
+theme
+Advanced Options
+useSecureCookies
+cookies
+Override JWT encode and decode methods
 
+=> config{
+  pages:{
+    
+  }
+}
+
+=> create a server Action in action file signin function having two parameter param1: preState and param2: Formdata then parse the form data using validator once validated then return sucess:true and messafe as signin successfully and if not the return error in catch block
+
+=> signout just call signout function form auth file
 
 ## Server Actions
 Server Actions in Next.js (Beginner-Friendly Guide)
