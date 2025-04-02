@@ -1,9 +1,9 @@
-import { Button } from "@/components/ui/button"
+
 import { APP_NAME } from "@/lib/constants"
-import { ShoppingCart, User } from "lucide-react"
+
 import Image from "next/image"
 import Link from "next/link"
-import { ModeToggle } from "../Theme/theme-toogler"
+
 import Menu from "./Menu"
 
 const Header = () => {

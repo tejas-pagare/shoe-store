@@ -1,6 +1,6 @@
 "use server"
 
-import { PrismaClient } from "@prisma/client"
+
 import { convertToPalinText } from "../utils";
 import { LATEST_PRODUCT_LIMIT } from "../constants";
 import { prisma } from "../../../db/prisma";

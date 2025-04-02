@@ -48,6 +48,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 => database polling
 => any changes made in prisma file should be migrate by running cmd =>npx prisma migrate dev --name migratefilename_custom
 
+# intial deployment
+=> npm run build
+=> npm run lint
+=> add this in script in package.json => {postinstall:"prisma generate"}
 
 
 

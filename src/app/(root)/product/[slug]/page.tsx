@@ -1,5 +1,4 @@
 import { getProductBySlug } from "@/lib/actions/product.action";
-import { Product } from "../../../../../types";
 import { notFound } from "next/navigation";
 import ProductPrice from "@/components/shared/products/product-price";
 import {
